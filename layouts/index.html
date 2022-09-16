@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Site Details</h1>
+    <p>
+      Below details comes from <strong>config.toml</strong> at the root level
+    </p>
+    <div>Site Title : {{.Site.Title}}</div>
+    <div>Site Url : {{.Site.BaseURL}}</div>
+
+    <h2>User Defined Params in config.toml</h2>
+
+    <p><strong>.Site.Params.caption</strong> = {{.Site.Params.caption}}</p>
+
+    <h1>Page Details</h1>
+    <p>
+      Refer to <strong>/content/_index.md</strong> file for the current page
+      variables
+    </p>
+
+    <div>Page Title : {{.Page.Title}}</div>
+    <div>Page Description : {{.Page.Description}}</div>
+
+    <h2>User Defined Params</h2>
+
+    <p><strong>.Page.Params.caption</strong> = {{.Page.Params.caption}}</p>
+  </body>
+</html>
